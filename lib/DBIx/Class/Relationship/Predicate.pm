@@ -31,9 +31,11 @@ sub register_relationship {
     my ($class, $rel, $info) = @_;
     my $attrs = $info->{'attrs'};
     if (my $acc_type = $attrs->{'accessor'}) {
-        $class->add_relationship_predicate(
-            $rel, $acc_type, $attrs->{'predicate'}
-        );
+        if ( defined($attrs->{'predicate'}) || !exists($attrs->{'predicate'}) {
+            $class->add_relationship_predicate(
+                $rel, $acc_type, $attrs->{'predicate'}
+            );
+        }
     }
     $class->next::method($rel, $info);
 }
@@ -42,6 +44,8 @@ sub add_relationship_predicate {
     my ( $class, $relname, $accessor_type, $predicate ) = @_;
     $predicate ||= "has_${relname}";
     my $name = join '::', $class, $predicate;
+
+    my $predicate_meth;
     if ( $accessor_type =~ m{single|filter}i ) {
         $predicate_meth = Sub::Name::subname($name, sub {
             return shift->$relname ? 1 : 0;
@@ -51,6 +55,7 @@ sub add_relationship_predicate {
             return shift->$relname->count;
         });
     }
+
     {
         no strict 'refs';
         no warnings 'redefine';
