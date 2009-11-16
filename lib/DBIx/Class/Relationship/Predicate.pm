@@ -31,7 +31,7 @@ sub register_relationship {
     my ($class, $rel, $info) = @_;
     my $attrs = $info->{'attrs'};
     if (my $acc_type = $attrs->{'accessor'}) {
-        if ( defined($attrs->{'predicate'}) || !exists($attrs->{'predicate'}) {
+        if ( defined($attrs->{'predicate'}) || !exists($attrs->{'predicate'}) ) {
             $class->add_relationship_predicate(
                 $rel, $acc_type, $attrs->{'predicate'}
             );
