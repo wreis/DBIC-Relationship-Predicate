@@ -1,9 +1,8 @@
-package Test::Schema;
+package # hide from PAUSE
+  Test::Schema;
 
-use strict;
-use warnings;
 use parent 'DBIx::Class::Schema';
 
-__PACKAGE__->load_classes;
+__PACKAGE__->load_namespaces;
 
 1;
