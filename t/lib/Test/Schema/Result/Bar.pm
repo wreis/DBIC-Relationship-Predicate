@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use parent 'DBIx::Class';
 
-__PACKAGE__->load_components(qw/InflateColumn::DateTime Core/);
+__PACKAGE__->load_components(qw/Relationship::Predicate InflateColumn::DateTime Core/);
 __PACKAGE__->table('bar');
 __PACKAGE__->add_columns(
     name => {

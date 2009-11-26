@@ -2,10 +2,10 @@ package # hide from PAUSE
   Test::Schema::Result::Foo;
 
 use strict;
-use warnings
+use warnings;
 use parent 'DBIx::Class';
 
-__PACKAGE__->load_components(qw/RelationShip::Predicate Core/);
+__PACKAGE__->load_components(qw/Relationship::Predicate Core/);
 __PACKAGE__->table('foo');
 __PACKAGE__->add_columns(
     id => {
@@ -17,7 +17,7 @@ __PACKAGE__->add_columns(
         'size' => 255,
     },
     last_name => {
-        'data_type' => 'varchar'
+        'data_type' => 'varchar',
         'size' => 255,
     },
 );
