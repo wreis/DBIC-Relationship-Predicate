@@ -9,6 +9,7 @@ requires 'DBIx::Class';
 requires 'parent';
 requires 'Sub::Name';
 
+build_requires 'DBD::SQLite';
 build_requires 'Test::More';
 
 auto_install;
