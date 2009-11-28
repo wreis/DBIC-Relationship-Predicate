@@ -17,10 +17,6 @@ __PACKAGE__->add_columns(
         'data_type' => 'datetime',
         'is_nullable' => 1,
     },
-    avatar => {
-        'data_type' => 'blob',
-        'is_nullable' => 1,
-    },
 );
 __PACKAGE__->set_primary_key('name');
 
