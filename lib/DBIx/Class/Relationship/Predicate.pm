@@ -48,7 +48,7 @@ sub add_relationship_predicate {
     my $predicate_meth;
     if ( $accessor_type =~ m{single|filter}i ) {
         $predicate_meth = Sub::Name::subname($name, sub {
-            return shift->$relname ? 1 : 0;
+            return defined(shift->$relname);
         });
     } elsif ( $accessor_type eq 'multi' ) {
         $predicate_meth = Sub::Name::subname($name, sub {
