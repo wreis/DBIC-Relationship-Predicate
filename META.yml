@@ -1,0 +1,29 @@
+---
+abstract: 'Predicate methods for relationship accessors'
+author:
+  - 'Wallace Reis <wreis@cpan.org>'
+build_requires:
+  DBD::SQLite: 0
+  ExtUtils::MakeMaker: 6.42
+  SQL::Translator: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.91'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: DBIx-Class-Relationship-Predicate
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  DBIx::Class: 0
+  Sub::Name: 0
+  parent: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
