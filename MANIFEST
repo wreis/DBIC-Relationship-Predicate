@@ -25,3 +25,4 @@ t/lib/Test/Schema/Result/Buzz.pm
 t/lib/Test/Schema/Result/Foo.pm
 t/lib/Test/Schema/Result/FooBaz.pm
 t/lib/TestClass.pm
+t/var/.exists

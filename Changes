@@ -1,4 +1,7 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
+0.02    Sun Nov 29, 2009
+        - fixed tests data folder
+
 0.01    Sat, Nov 28, 2009
         - Initial release
