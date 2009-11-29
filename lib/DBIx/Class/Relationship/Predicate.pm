@@ -7,7 +7,7 @@ use Sub::Name ();
 
 =head1 NAME
 
-DBIx::Class::Relationship::Predicate - Predicate methods for relationship accessors
+DBIx::Class::Relationship::Predicate - Predicates for relationship accessors
 
 =cut
 
@@ -15,11 +15,35 @@ our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
-   ...
-    __PACKAGE__->load_components(qw( Relationship::Predicate ... Core ));
+   package My::Schema::Result::Foo;
+
+   __PACKAGE__->load_components(qw( Relationship::Predicate ... Core ));
+
    ...
 
+   __PACKAGE__->belongs_to('baz' => 'My::Schema::Result::Baz',  'baz_id');
+   __PACKAGE__->might_have('buzz' => 'My::Schema::Result::Buzz', 'foo_id');
+   __PACKAGE__->has_many('bars' => 'My::Schema::Result::Bar', 'foo_id');
+
 =head1 DESCRIPTION
+
+L<DBIx::Class> component to automatically create predicates for relationship accessors in a result class.
+By default, it creates C<"has_${rel_accessor_name}"> methods and injects into the class,
+thus for that case we would have 'has_baz', 'has_buzz' and 'has_bars' methods on C<$foo> row object. You can
+define the name for each one (or also disable its creation using C<undef> as value) by setting 'predicate'
+key in the relationship's attrs hashref.
+
+   __PACKAGEE_->might_have(
+       'buzz' => 'My::Schema::Result::Buzz', 'foo_id',
+       { 'predicate' => 'got_a_buzz' }
+   );
+
+   or
+
+   __PACKAGEE_->might_have(
+       'buzz' => 'My::Schema::Result::Buzz', 'foo_id',
+       { 'predicate' => undef }
+   );
 
 =cut
 
