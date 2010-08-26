@@ -11,7 +11,7 @@ requires 'Sub::Name';
 
 test_requires 'DBD::SQLite';
 test_requires 'Test::More';
-test_requires 'SQL::Translator';
+test_requires 'SQL::Translator' => 0.11006;
 
 auto_install;
 
