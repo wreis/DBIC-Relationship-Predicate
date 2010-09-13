@@ -4,7 +4,7 @@ use lib 't/lib';
 use TestClass;
 
 my $schema = TestClass->schema({ populate => 1 });
-isa_ok($schema, 'Test::Schema');
+isa_ok($schema, 'Test::Schema', 'correct schema class');
 
 JoeFoo : {
   my $joe = $schema->resultset('Foo')->search_rs({

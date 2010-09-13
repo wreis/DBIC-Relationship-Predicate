@@ -25,4 +25,13 @@ __PACKAGE__->belongs_to(
     { 'foreign.id' => 'self.foo_id' }
 );
 
+__PACKAGE__->belongs_to(
+    'foo_2' => 'Test::Schema::Result::Foo',
+    { 'foreign.id' => 'self.foo_id' },
+    {
+        accessor => undef,
+        is_foreign_key_constraint => 0,
+    },
+);
+
 1;

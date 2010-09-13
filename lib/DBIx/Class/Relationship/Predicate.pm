@@ -11,19 +11,33 @@ DBIx::Class::Relationship::Predicate - Predicates for relationship accessors
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
-   package My::Schema::Result::Foo;
+    package My::Schema::Result::Foo;
 
-   __PACKAGE__->load_components(qw( Relationship::Predicate ... Core ));
+    __PACKAGE__->load_components(qw( Relationship::Predicate ... Core ));
 
-   ...
+    ...
 
-   __PACKAGE__->belongs_to('baz' => 'My::Schema::Result::Baz',  'baz_id');
-   __PACKAGE__->might_have('buzz' => 'My::Schema::Result::Buzz', 'foo_id');
-   __PACKAGE__->has_many('bars' => 'My::Schema::Result::Bar', 'foo_id');
+    __PACKAGE__->belongs_to('baz' => 'My::Schema::Result::Baz',  'baz_id');
+
+    __PACKAGE__->might_have(
+        'buzz' => 'My::Schema::Result::Buzz',
+        { 'foreign.foo_id' => 'self.id' },
+        { 'predicate' => 'got_a_buzz' },
+    );
+
+    __PACKAGE__->has_many(
+        'foo_baz' => 'My::Schema::Result::FooBaz',
+        { 'foreign.foo_id' => 'self.id' },
+        { 'predicate' => undef },
+    );
+
+    __PACKAGE__->has_many('bars' => 'My::Schema::Result::Bar', 'foo_id');
+
+    1;
 
 =head1 DESCRIPTION
 
