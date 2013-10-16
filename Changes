@@ -1,6 +1,6 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
-{{$NEXT}}
+0.04      2013-10-16 23:16:43 UTC
  - use Dist::Zilla;
  - Fix path for test-db
 
