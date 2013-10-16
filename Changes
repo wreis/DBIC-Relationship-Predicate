@@ -1,6 +1,8 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
 {{$NEXT}}
+ - use Dist::Zilla;
+ - Fix path for test-db
 
 0.03
   - tests require SQL::Translator => 0.11006
