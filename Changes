@@ -1,11 +1,13 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
+{{$NEXT}}
+
 0.03
-	- tests require SQL::Translator => 0.11006
-	- More tests and some dist fixes
+  - tests require SQL::Translator => 0.11006
+  - More tests and some dist fixes
 
 0.02    Sun Nov 29, 2009
-        - fixed tests data folder
+  - fixed tests data folder
 
 0.01    Sat, Nov 28, 2009
-        - Initial release
+  - Initial release

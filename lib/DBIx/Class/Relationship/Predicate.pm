@@ -5,13 +5,9 @@ use strict;
 use parent 'DBIx::Class';
 use Sub::Name ();
 
-=head1 NAME
+# VERSION
 
-DBIx::Class::Relationship::Predicate - Predicates for relationship accessors
-
-=cut
-
-our $VERSION = '0.03';
+# ABSTRACT: Predicates for relationship accessors
 
 =head1 SYNOPSIS
 
