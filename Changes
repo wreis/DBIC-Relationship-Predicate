@@ -1,6 +1,8 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
 {{$NEXT}}
+
+0.05      2013-10-16 23:21:19 UTC
  - Prune local-lib
 
 0.04      2013-10-16 23:16:43 UTC
