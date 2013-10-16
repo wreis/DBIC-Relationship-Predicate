@@ -3,6 +3,8 @@ package TestClass;
 use strict;
 use warnings;
 use Test::Schema;
+use FindBin qw($Bin);
+use Path::Class qw(file);
 
 BEGIN {
   use parent 'Test::Builder::Module';
@@ -15,7 +17,15 @@ sub schema_class {
     return $schema_class;
 }
 
-sub connect_info { [ 'dbi:SQLite:t/var/test_schema.db' ] }
+sub connect_info {
+  my $db_file = file("$Bin/../t/var", 'test_schema.db');
+  unless ( -e $db_file ) {
+    my $db_dir = $db_file->dir;
+    $db_dir->mkpath unless -e $db_dir;
+    $db_file->touch;
+  }
+  return [ "dbi:SQLite:$db_file" ];
+}
 
 sub schema {
     my ( $class, $args ) = @_;
