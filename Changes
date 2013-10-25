@@ -1,6 +1,7 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
 {{$NEXT}}
+ - Update dzil setup
 
 0.05      2013-10-16 23:21:19 UTC
  - Prune local-lib
