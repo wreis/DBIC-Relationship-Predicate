@@ -1,6 +1,7 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
 {{$NEXT}}
+ - Fix release date format
 
 0.06      2013-10-25 11:37:24 UTC
  - Update dzil setup
