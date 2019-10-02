@@ -1,7 +1,5 @@
 Revision history for DBIx::Class::Relationship::Predicate
 
-{{$NEXT}}
-
 0.07      2013-10-25
  - Fix release date format
 

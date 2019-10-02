@@ -5,7 +5,8 @@ use strict;
 use parent 'DBIx::Class';
 use Sub::Name ();
 
-# VERSION
+our $VERSION = '0.07';
+$VERSION = eval $VERSION;
 
 # ABSTRACT: Predicates for relationship accessors
 
