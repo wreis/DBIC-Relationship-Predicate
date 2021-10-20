@@ -135,13 +135,16 @@ L<http://search.cpan.org/dist/DBIx-Class-Relationship-Predicate/>
 
 =back
 
-=head1 COPYRIGHT
+=head1 AUTHOR
 
-Copyright 2009 Wallace Reis.
+Wallace Reis, C<< <wreis at cpan.org> >>
 
-=head1 LICENSE
+=head1 COPYRIGHT AND LICENSE
 
-This library is free software and may be distributed under the same terms as perl itself.
+This software is copyright (c) 2009 by Wallace Reis, C<< <wreis at cpan.org> >>.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
