@@ -1,0 +1,11 @@
+.perl-version
+cpanfile.snapshot
+local/
+
+*.swp
+
+.build
+
+DBIC-Relationship-Predicate-*.tar.gz
+DBIC-Relationship-Predicate-*/
+
