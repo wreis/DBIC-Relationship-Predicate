@@ -100,9 +100,12 @@ Wallace Reis, C<< <wreis at cpan.org> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-dbix-class-relationship-predicate at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=DBIx-Class-Relationship-Predicate>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests on the bugtracker website
+L<https://github.com/wreis/DBIC-Relationship-Predicate/issues>
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 SUPPORT
 
@@ -114,9 +117,9 @@ You can also look for information at:
 
 =over 4
 
-=item * RT: CPAN's request tracker
+=item * Github Issues
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=DBIx-Class-Relationship-Predicate>
+L<https://github.com/wreis/DBIC-Relationship-Predicate/issues>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
