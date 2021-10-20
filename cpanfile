@@ -8,3 +8,8 @@ on test => sub {
   requires 'SQL::Translator' => 0.11006;
   requires 'Path::Class';
 };
+
+on develop => sub {
+    requires 'Dist::Milla';
+    requires 'Test::Pod';
+};
