@@ -26,7 +26,7 @@
 
 # DESCRIPTION
 
-[DBIx::Class](https://metacpan.org/pod/DBIx%3A%3AClass) component to automatically create predicates for relationship accessors in a result class.
+[DBIx::Class](https://metacpan.org/pod/DBIx::Class) component to automatically create predicates for relationship accessors in a result class.
 By default, it creates `"has_${rel_accessor_name}"` methods and injects into the class,
 thus for that case we would have 'has\_baz', 'has\_buzz' and 'has\_bars' methods on `$foo` row object. You can
 define the name for each one (or also disable its creation using `undef` as value) by setting 'predicate'
