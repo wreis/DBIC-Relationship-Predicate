@@ -50,9 +50,12 @@ Wallace Reis, `<wreis at cpan.org>`
 
 # BUGS
 
-Please report any bugs or feature requests to `bug-dbix-class-relationship-predicate at rt.cpan.org`, or through
-the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=DBIx-Class-Relationship-Predicate](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=DBIx-Class-Relationship-Predicate).  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests on the bugtracker website
+[https://github.com/wreis/DBIC-Relationship-Predicate/issues](https://github.com/wreis/DBIC-Relationship-Predicate/issues)
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 # SUPPORT
 
@@ -62,9 +65,9 @@ You can find documentation for this module with the perldoc command.
 
 You can also look for information at:
 
-- RT: CPAN's request tracker
+- Github Issues
 
-    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=DBIx-Class-Relationship-Predicate](http://rt.cpan.org/NoAuth/Bugs.html?Dist=DBIx-Class-Relationship-Predicate)
+    [https://github.com/wreis/DBIC-Relationship-Predicate/issues](https://github.com/wreis/DBIC-Relationship-Predicate/issues)
 
 - AnnoCPAN: Annotated CPAN documentation
 
@@ -78,10 +81,13 @@ You can also look for information at:
 
     [http://search.cpan.org/dist/DBIx-Class-Relationship-Predicate/](http://search.cpan.org/dist/DBIx-Class-Relationship-Predicate/)
 
-# COPYRIGHT
+# AUTHOR
 
-Copyright 2009 Wallace Reis.
+Wallace Reis, `<wreis at cpan.org>`
 
-# LICENSE
+# COPYRIGHT AND LICENSE
 
-This library is free software and may be distributed under the same terms as perl itself.
+This software is copyright (c) 2009 by Wallace Reis, `<wreis at cpan.org>`.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
